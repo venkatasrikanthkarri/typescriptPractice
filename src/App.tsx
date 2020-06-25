@@ -4,6 +4,7 @@ import { Provider } from 'mobx-react'
 
 import HomeRoute from './routes/HomeRoute'
 import SampleRoute from './routes/SampleRoute'
+import { PostsRoute } from './Posts/routes'
 
 import stores from './stores'
 
@@ -25,6 +26,11 @@ const App = () => {
           <Route exact path={TODOS_ROUTE_PATH}>
             <TodosRoute />
           </Route>
+
+          <Route exact path={'/posts'}>
+            <PostsRoute />
+          </Route>
+
           <Route path={HOME_ROUTE_PATH}>
             <HomeRoute />
           </Route>

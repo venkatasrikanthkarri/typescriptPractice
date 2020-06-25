@@ -10,9 +10,7 @@ class TodoModel {
   id: string
   @observable title: string
   @observable isCompleted: boolean
-
   todoService: TodoService
-
   @observable updateCompletionAPIStatus: APIStatus
   @observable updateCompletionAPIError: Error | null
 
@@ -21,7 +19,6 @@ class TodoModel {
     this.title = todo.title
     this.isCompleted = todo.isCompleted
     this.todoService = todoService
-
     this.updateCompletionAPIStatus = API_INITIAL
     this.updateCompletionAPIError = null
   }
