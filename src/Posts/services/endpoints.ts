@@ -1,3 +1,3 @@
 export const endPoint = {
-    posts:'posts'
+  posts: 'posts'
 }
